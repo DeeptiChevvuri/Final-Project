@@ -1,0 +1,19 @@
+Column,Data Type,Definition
+Supplier,categorical,Raw material supplier
+Part Number,categorical,Part number from supplier
+Quantity on Hand,numerical,Quantity of item on hand
+Item UOM,categorical,"Unit of Measure of item (each, piece, foot, inch, pound, etc)"
+Item Cost,numerical,Dollar cost of item purchased per UOM
+$ on Hand,numerical,Dollars of inventory on hand.  This is the same as multiplying (Quantity On Hand x Item Cost)
+Annual Usage Qty,numerical,Quantity used in past 12 months based on item UOM
+Average Daily Usage Qty,numerical,Dollars of inventory on hand.  This is the same as dividing (Annual Usage Qty / 245)
+Minimum Order Qty,numerical,Minimum required order from Supplier in quantity of UOM
+Box Size Qty,numerical,Incremental increase above order minimum quantity.  Also reflects the minimum amount issued from stock during usage transactions.
+Lead Time [Days],numerical,"Working days of lead time.  5 days equals 1 week; for example, order on Monday, receive the following Monday."
+Annual Usage [$],numerical,Annual usage in Dollars.  This is the same as multiplying (Annual Usage Qty x Item Cost)
+Mfg_Site,categorical,Manufacturing site where raw material inventory is stored and used in production.
+Planner Code,categorical,"The planner code identifies the individual person(s) responsible to manage the decision of when to purchase, how much to purchase, and the safety stock level."
+Planning Method,categorical,"Planning method is a categorical variable.  There are 3 methods represented: Manual, Min-max, and MRP."
+Safety Stock Qty,numerical,Quantity of item to be kept on hand in the MRP system to trigger appropriate reorder timelines and prevent stockouts.
+% Received On Time,numerical,On time receipts as a percentage of total quantity received for the Part Number & Mfg Site.
+Delivery Frequency,categorical,This is a categorical variable that determines how often an item can be shipped or received from a Supplier to a Mfg Site.

@@ -1,0 +1,47 @@
+Idea for Stat team final project
+
+Inventory data for manufacturing
+
+Review 1000+ inventory items based on the following criteria:
+1. Items must have at least 12 months of transaction history (no new parts)
+2. Items will be stored in multiple manufacturing facilities
+3. Items will be purchased from multiple suppliers
+
+Response variable: Dollars on hand in current inventory
+
+The following data will be provided
+1. Item number
+2. Supplier
+3. Inventory Level at snapshot in quantity
+4. Minimum Order Quantity
+5. Box quantity or Lot size
+6. Frequency of shipment from supplier (1x per week, 5x per week, etc)
+7. Buyer/Planner
+8. Item lead time from Supplier
+9. Supplier On-time Delivery rate
+10. Item Safety Stock level
+11. Item cost
+12. Annual usage or average daily/weekly usage
+
+Key Question:
+1. Can you build a multiple regression analysis that would include factor(s) are most important to inventory dollars on hand?
+
+Answer the following questions:
+1. Based on a multiple regression analysis, which factor(s) are most important to inventory dollars on hand?
+2. How much impact does a change (up or down) in the item lead time from the supplier have on inventory dollars on hand?
+3. Example, for a 1 day increase/decrease in lead time, there is a xx% increase/decrease in inventory dollars on hand, assuming all other variables are constant.
+4. How much impact does a change (up or down) in the item minimum order quantity from the supplier have on inventory dollars on hand?
+5. How much impact does a change (up or down) in the item box or lot size quantity from the supplier have on inventory dollars on hand?
+
+Build a prediction model that answers the following question (if applicable):
+If a new item is going to be added to the production plan, what would be the expected inventory dollars on hand assuming the following attributes:
+1. Lead time is 10 days
+2. Item cost is $12
+3. Minimum Order Quantity is 1000
+4. Annual usage is expected to be 250,000
+5. Box quantity is 500
+6. Safety stock level is equal to 3 days' usage
+7. Supplier delivery rate is 98% on time
+8. Supplier ships on 1 day each week
+9. Site is equal to SITE1
+10. Buyer/Planner is BUYER11
